@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* font-family: "Red Hat Display", sans-serif; */
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --des-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* UTILITY CLASS */
+
+.flex{
+    display: flex;
+}
+
+.flex.justify-content-center{
+    justify-content: center;
+}
+
+.flex.align-items-center{
+    align-items: center;
+}
+
+.flex.justify-content-space{
+    justify-content: space-between;
+}
+
+.flex.column{
+    flex-direction: column;
+}
+
+/* UTILITY CLASS END*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+}
+
+.container{
+    box-sizing: border-box;
+    width: 21rem;
+    height: 31rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.hero{
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+
+.description{
+    font-weight: 600;
+    color: var(--des-blue);
+    text-align: center;
+}
+
+.summary {
+    height: 100%;
+    padding: 1rem;
+}
+
+.annual{
+    background-color: var(--very-pale-blue);
+    width: 100%;
+    height: 20%;
+    gap: 0.5rem;
+    padding-inline: 0.5rem;
+    border-radius: 1rem;
+}
+
+.music-logo{
+    background-color: var(--very-pale-blue);
+}
+
+.price{
+    width: 100%;
+}
+
+.plan{
+    font-weight: 700;
+}
+
+.year{
+    font-weight: 600;
+    color: var(--des-blue);
+}
+
+.change{
+    font-size: 0.8rem;
+    text-align: end;
+    justify-self: end;
+    width: 100%;
+    color: var(--bright-blue);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.change:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    width: 100%;
+    height: 12%;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 700;
+}
+
+.proceed{
+    background-color: var(--bright-blue);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.proceed:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.cancel{
+    background: none;
+    color: var(--des-blue);
+}
+
+.cancel:hover{
+    color: var(--dark-blue);
+    cursor: pointer;
+}
